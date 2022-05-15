@@ -1,0 +1,16 @@
+#!/usr/bin/env php
+<?php
+
+$commandName = $argv[2];
+
+switch ($argv[2]) {
+    case \App\Interfaces\CacheActionsInterface::ADD:
+        print_r($cacheService->add($argv[3], $argv[4]));
+        break;
+    case \App\Interfaces\CacheActionsInterface::DELETE:
+        print_r($cacheService->delete($argv[3]));
+        break;
+    default:
+        print_r('Неизвестная команда для работы с ' . $argv[1]);
+        break;
+}

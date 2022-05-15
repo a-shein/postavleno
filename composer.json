@@ -1,0 +1,22 @@
+{
+    "name": "alexander/postavleno",
+    "description": "postavleno_test",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Александр Шеин",
+            "email": "shein.a@gigwork.ru"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "bin": [
+        "bin/redis"
+    ],
+    "require": {
+        "predis/predis": "^1.1"
+    }
+}
