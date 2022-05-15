@@ -19,8 +19,6 @@ if (!empty($uri)) {
 }
 
 if ($_SERVER['REQUEST_URI'] === '/') {
-    $controller = new \App\Http\Controller\RedisController();
-    $data = $controller->get()->data;
     require_once 'view/redis.php';
 } else {
     $error = new \App\Http\Response\ApiResponse(['message' => 'Error info message'], 500, false);
