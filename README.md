@@ -13,6 +13,10 @@
 * ```make start``` или ```php -S localhost:8080 -t public public/index.php```
 * ```make redis``` или ```docker-compose up -d```
 
+### Пример команд:
+  * добавить данные в кэш ```./command redis add a 123```
+  * удалить данные из кэша по ключу ```./command redis delete a```
+    
 ## Задание:
 
 ```
